@@ -102,7 +102,7 @@ jobs:
           php-version: '8.3'
       - name: Build artefaktu
         run: bash build/build.sh
-      - uses: wordpress/plugin-check-action@98a1788320d0add90df2d8183934ecccbc4e05d2 # v1
+      - uses: wordpress/plugin-check-action@10857da14b6c2246d15402b3e69f777edcf8c12e # v1
         with:
           build-dir: './build/dist/${{ matrix.plugin }}'
           # outdated_tested_upto_header ZDJETY 27.07: paczka przeszla instalacje od zera
