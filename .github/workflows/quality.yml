@@ -84,7 +84,7 @@ jobs:
           php-version: '8.3'
       - name: Build (kopie Common, BUILD-INFO, ZIP, smoke)
         run: bash build/build.sh
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: mp-plugins-zip
           path: build/dist/*.zip
@@ -207,7 +207,7 @@ jobs:
       # sumujaca odroznila "czesc pobiegla i padla" od "czesc w ogole nie wystartowala".
       - name: Licznik wykonanych do artefaktu
         if: always()
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: e2e-wykonane-${{ matrix.shard }}
           path: /tmp/wykonane.txt
